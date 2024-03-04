@@ -1,0 +1,258 @@
+* {
+    margin: auto;
+    padding: auto;
+    background-image: url('https://i.postimg.cc/50kYPw44/bg1.png');
+    background-size: cover;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* header start */
+.jj1 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.High {
+    display: inline-block;
+    background-color: royalblue;
+    padding: 5px 10px;
+    color: white;
+}
+
+/* heaser end */
+.qq1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Added font size */
+}
+
+.pp1,
+.pp2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Added font size */
+}
+
+.qq2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    background-color: rosybrown;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button1:hover {
+    background-color: royalblue;
+    transform: scale(1, 1);
+}
+
+/* footer */
+
+.footer11 {
+    margin: 20px;
+    margin-top: 160px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* Set the direction as row */
+}
+
+.unorder11 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unorder11 li {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust spacing between items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nn {
+    background-color: rosybrown;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nn:hover {
+    background-color: royalblue;
+    transform: scale(1, 1);
+}
+
+/* popup start */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    z-index: 999;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: royalblue;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#exitBtn {
+    background-color: rosybrown;
+    color: white;
+}
+
+#exitBtn:hover {
+    background-color: royalblue;
+    transform: scale(1, 1);
+}
+
+#continueBtn {
+    background-color: rosybrown;
+    color: white;
+}
+
+#continueBtn:hover {
+    background-color: royalblue;
+    transform: scale(1, 1);
+}
+
+/* popup end */
+
+/* page quiz start */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#questionContainer {
+    margin-top: 50px;
+}
+
+#optionsContainer {
+    text-align: left;
+}
+
+/* Increase the size of radio buttons */
+/* Hide the default appearance of radio buttons */
+input[type="radio"] {
+    -webkit-appearance: none;
+    /* Remove default appearance for WebKit browsers */
+    -moz-appearance: none;
+    /* Remove default appearance for Firefox */
+    appearance: none;
+    /* Remove default appearance for other browsers */
+    width: 20px;
+    /* Set width of radio button */
+    height: 20px;
+    /* Set height of radio button */
+    border-radius: 50%;
+    /* Make radio button circular */
+    border: 2px solid #999;
+    /* Add border to radio button */
+    outline: none;
+    /* Remove outline */
+    margin-right: 20px;
+    /* Add margin between radio buttons */
+}
+
+/* Style to indicate when radio buttons are selected */
+input[type="radio"]:checked::before {
+    content: "";
+    /* No content */
+    display: inline-block;
+    width: 10px;
+    /* Adjust size as needed */
+    height: 10px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    /* Make a circular indicator */
+    background-color: #333;
+    /* Color of the indicator */
+    margin-right: 20px;
+    /* Add margin between radio buttons */
+}
+
+/* Media Queries */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .jj1 {
+        margin-left: 10px;
+    }
+    .qq1 {
+        font-size: 24px;
+    }
+    .pp1,
+    .pp2 {
+        font-size: 16px;
+    }
+    .qq2 .button1 {
+        font-size: 16px;
+    }
+}
